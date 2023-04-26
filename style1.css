@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Gowun+Dodum&display=swap');
+* {
+    font-family: 'Gowun Dodum';
+}
+body{
+    margin:0px;
+}
+a{
+    color:aliceblue;
+    text-decoration: none;
+}
+.title {
+    background-color: beige;
+    height: 300px;
+    color: aliceblue;
+
+    /*flex box 개념 : flex 속성은 요소들을 flexible하게 위치시킨다.*/
+    /*flex container 개념 : flex box 영역을 담는 전체 영역*/
+    /*flex item 개념 : flex box의 요소들을 가리킨다*/
+
+    /*(1)*/
+    display: flex;
+    /*전체 레이아웃(블록 레이아웃, 인라인 레이아웃, 테이블 레이아웃, 위치 지정 레이아웃) 자동 정렬*/
+
+    /*(2)*/
+    flex-direction: column;
+    /*flexible item이 flex 컨테이너 안에 위치되는 방법을 지정하는 속성으로 column은 내용 세로 정렬*/
+
+    /* (3)*/
+    align-items: center;
+    /*align-items는 세로축 기중으로 정렬하는 속성으로, center로 지정했으므로 가로 가운데 정렬 */
+
+    /*(4)*/
+    justify-content: center;
+    /*justify-content는 가로축을 기준으로 좌우 정렬을 관장하며, center로 지정했으로 세로 가운데 정렬*/
+
+    background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.5)), url(https://movie-phinf.pstatic.net/20210715_95/1626338192428gTnJl_JPEG/movie_image.jpg);
+    background-position: center;
+    background-size: cover;
+
+    margin:0px;
+}
+
+.title>button {
+    width: 250px;
+    height: 50px;
+    background-color: transparent;
+    color: aliceblue;
+    border: 1px solid;
+}
+
+/*title 아래에 있는 button 지정*/
+.title>button:hover {
+    width: 250px;
+    height: 50px;
+    color: white;
+    background-color: rgba(255, 255, 255, 0.3);
+    color: black;
+    border: 1px solid;
+}
+.cards{
+    width: 1200px;
+    margin:0 auto;
+}
+.posts{
+    width:500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 50px auto;
+}
